@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="experience">
+
+        <div class="container">
+    
+            <h2 class="heading">Expérience professionnelle</h2>
+            
+                <ul class="timeline">
+    
+                    <li> 
+    
+                    <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+    
+                    <div class="timeline-panel-container">
+    
+                        <div class="timeline-panel">
+    
+                            <div class="timeline-heading">
+                                <h3>Campus Numérique In the Alps</h3>
+                                <h4>Formation Technicien Développeur Web</h4>
+                                <p><i class="bi bi-calendar-date"></i>    10/2021 - 04/2022 (6 mois)</p>
+                            </div>
+    
+                            <div class="timeline-body">
+                                <p>Bases Front-End <br>
+                                    Bases Back-End <br>
+                                     ....</p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+    
+                    <li> 
+                        <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+    
+                        <div class="timeline-panel-container-inverted">
+    
+                            <div class="timeline-panel">
+    
+                                <div class="timeline-heading">
+                                    <h3>Roche Diagnostics France</h3>
+                                    <h4>Généraliste RH</h4>
+                                    <p><i class="bi bi-calendar-date"></i>      2011 - 2021 (10 ans)</p>
+                                </div>
+    
+                                <div class="timeline-body">
+                                   <p>  - Reporting & analyse de données <br>
+                                        - Conseil / support clients internes et externes <br>
+                                        - Projets transverses : actions de communication interne, création du site intranet RH <br>
+                                        - Référente RGPD </p>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+    
+                    <li> 
+                        <div class="timeline-badge"><i class="bi bi-briefcase-fill"></i></div>
+    
+                        <div class="timeline-panel-container">
+    
+                            <div class="timeline-panel">
+    
+                                <div class="timeline-heading">
+                                    <h3>DSM Food Specialties</h3>
+                                    <h4>Généraliste RH</h4>
+                                    <p><i class="bi bi-calendar-date"></i>      2007-2011 (4 ans)</p>
+                                </div>
+    
+                                <div class="timeline-body">
+                                    <p>Implémentation et intégration nouveau SIRH (ADP - Hypervision)</p>
+                                </div>
+    
+                             </div>
+                        </div>
+                    </li>
+             </ul>
+            </div>
+            
+        </section>
+</body>
+</html>
+
+<style>
+   /* EXPERIENCE*/
+
+#experience{
+    background:linear-gradient(gold,white);
+}
+
+#experience ul{
+    list-style: none;
+}
+
+.timeline{
+    padding: 10px 10px;
+    position: relative;
+}
+
+.timeline:before{
+    top: 0;
+    bottom:0;
+    position: absolute;
+    content: " ";
+    width: 5px;
+    background: #6c757d;
+    left:50%;
+    margin-left: -.5px;
+}
+
+.timeline > li{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline > li:after{
+    clear: both;
+}
+
+.timeline > li:before, .timeline > li:after{
+    content: " ";
+    display: table;
+}
+
+.timeline li .timeline-badge{
+    color: gold;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top:16px;
+    left: 50%;
+    margin-left: -25px;
+    background: #6c757d;
+    border-radius: 50%;
+}
+
+.timeline-panel-container{
+    width: 50%;
+    float: left;
+}
+
+.timeline-panel-container-inverted{
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel{
+    background-color: #fff;
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+}
+
+.timeline-panel-container-inverted .timeline-panel{
+    float: left;
+    margin-left: 40px;
+}
+
+.timeline-panel:after{
+    position: absolute;
+    top:27px;
+    right: -14px;
+    display: inline-block;
+    border-top:14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel:after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-heading h3{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.timeline-heading h4{
+    background-color: #6c757d;
+    color:gold;
+    font-size: 18px;
+} 
+</style>
