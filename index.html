@@ -1,405 +1,596 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Estelle Lebrun">
-    <meta name="description" content="CV & portfolio Estelle Lebrun - Développeur Web Fullstack">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Estelle Lebrun" />
+    <meta
+      name="description"
+      content="CV & portfolio Estelle Lebrun - Développeur Web Fullstack"
+    />
     <title>Estelle Lebrun, Développeuse Web Fullstack</title>
-    <link rel="icon" href="images/favicon.ico" type="image/ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- ALERT ALTERNANCE -->
 
-<!-- ALERT ALTERNANCE -->
+    <div
+      id="alert"
+      class="fixed-bottom alert alert-warning alert-dismissible fade show"
+      role="alert"
+    >
+      <i class="bi bi-exclamation-triangle-fill"></i>
+      <strong>Recherche alternance</strong> à compter de juin 2022 pour un an.
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
 
-<div id="alert" class="fixed-bottom alert alert-warning alert-dismissible fade show" role="alert">
-    <i class="bi bi-exclamation-triangle-fill"></i>
-    <strong>Recherche alternance</strong> à compter de juin 2022 pour un an.
-	<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-</div>
- 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-<nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark bg-gradient">
-    <div class="container-fluid">
-
-        <div class="navbar-brand"><img src="images/EL_logo.jpg" 
-        alt="Logo_Estelle_Lebrun">
+    <nav
+      class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark bg-gradient"
+    >
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <img src="images/EL_logo.jpg" alt="Logo_Estelle_Lebrun" />
         </div>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-        <span class="navbar-toggler-icon"></span>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div id="myNavbar" class="collapse navbar-collapse">   
-        <ul class="navbar-nav me-auto mb-lg-auto">
+
+        <div id="myNavbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-lg-auto">
             <li class="nav-item">
-            <a class="nav-link" href="#header">A propos</a>
+              <a class="nav-link" href="#header">A propos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#skills">Compétences</a>
+              <a class="nav-link" href="#skills">Compétences</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#experience">Expérience</a>
+              <a class="nav-link" href="#experience">Expérience</a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#portfolio" id="navportfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Portfolio</a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="navportfolio">
-                <li><a class="dropdown-item" href="projet_vandeins.html">Projet Mairie</a></li>
-            </ul>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#portfolio"
+                id="navportfolio"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Portfolio</a
+              >
+              <ul
+                class="dropdown-menu"
+                role="menu"
+                aria-labelledby="navportfolio"
+              >
+                <li>
+                  <a class="dropdown-item" href="projet_vandeins.html"
+                    >Projet Mairie</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contact">Contact</a>                  
+              <a
+                class="nav-link"
+                href="#contact"
+                data-bs-toggle="modal"
+                data-bs-target="#contact"
+                >Contact</a
+              >
             </li>
-        </ul>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- MODAL CONTACT -->
+    <!-- MODAL CONTACT -->
 
-<section id="modalContact">
-    
-    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-            
+    <section id="modalContact">
+      <div
+        class="modal fade"
+        id="contact"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
-                
-            <div class="modal-content">
-                    
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabel">Me contacter</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                        
-                <div class="modal-body">
-                    
-                    <div id="modalbox1">
-                    <p><i class="bi bi-envelope"></i > <br> <a href="mailto:lebrun.estelle@gmail.com"> Par mail </a></p>
-                    <p><i class="bi bi-phone"></i> <br> +33 6 60 34 20 70 </p>
-                    <p><i class="bi bi-linkedin"></i> <br> <a href="https://www.linkedin.com/in/estelle-lebrun-299a9113b/" target="blank"> LinkedIn</a></p>
-                    <p><i class="bi bi-github"></i> <br> <a href="https://github.com/stoule-dev" target="blank">Github</a></p>
-                    </div>
-                    
-                    <div id="modalbox2">
-                    <p> (ou) Laissez moi votre message</p>
-
-                    <form id="contactForm" method="POST" action="https://httpbin.org/post">
-                                                
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" required class="form-control" name="name" id="name"  aria-describedby="name">
-                            <label for="surname" class="form-label">Prénom </label>
-                            <input type="text" required class="form-control" name="surname" id="surname"  aria-describedby="surname">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email </label>
-                            <input type="email" required class="form-control" name="email" id="email">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Votre message</label>
-                            <textarea name="message" id="message" required class="form-control" cols="30" rows="10"></textarea>
-                            <span class="comments"></span>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-secondary" >Envoyer</button>
-                    </form>
-                    </div> 
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Me contacter</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-        </div>  
-    </div>   
-</section>
 
-<section id="SucessModal">
-<div class="modal" id="FormSuccess" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">  
-            <div class="modal-content">
-                    <div class="modal-body">
-                    <h5 class="modal-title" id="ModalLabel1">Ce site étant hébergé sur Github pour le moment, l'envoi Php n'est pas opérationnel, mais n'hésitez pas à me joindre directement par téléphone ou mail. Merci. </h5>
-                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-                    </div>
+            <div class="modal-body">
+              <div id="modalbox1">
+                <p>
+                  <i class="bi bi-envelope"></i> <br />
+                  <a href="mailto:lebrun.estelle@gmail.com"> Par mail </a>
+                </p>
+                <p>
+                  <i class="bi bi-phone"></i> <br />
+                  +33 6 60 34 20 70
+                </p>
+                <p>
+                  <i class="bi bi-linkedin"></i> <br />
+                  <a
+                    href="https://www.linkedin.com/in/estelle-lebrun-299a9113b/"
+                    target="blank"
+                  >
+                    LinkedIn</a
+                  >
+                </p>
+                <p>
+                  <i class="bi bi-github"></i> <br />
+                  <a href="https://github.com/stoule-dev" target="blank"
+                    >Github</a
+                  >
+                </p>
+              </div>
+
+              <div id="modalbox2">
+                <p>(ou) Laissez moi votre message</p>
+
+                <form
+                  id="contactForm"
+                  method="POST"
+                  action="https://httpbin.org/post"
+                >
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="name"
+                      id="name"
+                      aria-describedby="name"
+                    />
+                    <label for="surname" class="form-label">Prénom </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="surname"
+                      id="surname"
+                      aria-describedby="surname"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email </label>
+                    <input
+                      type="email"
+                      required
+                      class="form-control"
+                      name="email"
+                      id="email"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="message" class="form-label"
+                      >Votre message</label
+                    >
+                    <textarea
+                      name="message"
+                      id="message"
+                      required
+                      class="form-control"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <span class="comments"></span>
+                  </div>
+
+                  <button type="submit" class="btn btn-secondary">
+                    Envoyer
+                  </button>
+                </form>
+              </div>
             </div>
-        </div>  
-</div>   
-</section>  
-
-<!-- ABOUT SECTION -->
-
-<section id="about">
-
-    <div id="header" class="container-fluid">
-
-    <div class="title">
-        <div class="opacity">
-        <h1>Estelle Lebrun</h1>
-        <h2>Développeuse Web Fullstack</h2>
-        <h3>- Région Grenobloise -</h3>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <div class="row">
-        <div class="header_left col-md-6">
+    <section id="SucessModal">
+      <div
+        class="modal"
+        id="FormSuccess"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5 class="modal-title" id="ModalLabel1">
+                Ce site étant hébergé sur Github pour le moment, l'envoi Php
+                n'est pas opérationnel, mais n'hésitez pas à me joindre
+                directement par téléphone ou mail. Merci.
+              </h5>
+              <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+      <div id="header" class="container-fluid">
+        <div class="title">
+          <div class="opacity">
+            <h1>Estelle Lebrun</h1>
+            <h2>Développeuse Web Fullstack</h2>
+            <h3>- Région Grenobloise -</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="header_left col-md-6">
             <span></span>
-            <img src="images/PhotoCV.jpg" class="avatar" alt="Avatar" >
-        </div>
+            <img src="images/PhotoCV.jpg" class="avatar" alt="Avatar" />
+          </div>
 
-        <div class="header_right col-md-6">
+          <div class="header_right col-md-6">
             <div class="content">
-            <h3>Allier passion et métier est mon leitmotiv.</h3>
-            <p>Après 20 ans de carrière dans les Ressources Humaines où j'ai pu lier mon domaine professionnel à ma passion : 
-            implémentation et intégration de SIRH, création de sites internet internes, analyse de données...  
-            j'ai souhaité passer le cap et devenir développeuse web à part entière. </p>
-            <p>Passionnée par les nouvelles technologies en général, orientée clients et résultats, 
-            les nouvelles compétences techniques que je suis en train d'acquérir avec le Campus Numérique in the Alps et de manière autodidacte associées à mon parcours professionnel précédent sont gages 
-            d'engagement, de maturité et de sérieux dans le développement web que je réalise. </p>
+              <h3>Allier passion et métier est mon leitmotiv.</h3>
+              <p>
+                Après 20 ans de carrière dans les Ressources Humaines où j'ai pu
+                lier mon domaine professionnel à ma passion : implémentation et
+                intégration de SIRH, création de sites internet internes,
+                analyse de données... j'ai souhaité passer le cap et devenir
+                développeuse web à part entière.
+              </p>
+              <p>
+                Passionnée par les nouvelles technologies en général, orientée
+                clients et résultats, les nouvelles compétences techniques que
+                je suis en train d'acquérir avec le Campus Numérique in the Alps
+                et de manière autodidacte associées à mon parcours professionnel
+                précédent sont gages d'engagement, de maturité et de sérieux
+                dans le développement web que je réalise.
+              </p>
             </div>
             <div class="buttonbar">
-                <a href="docs/CV_Estelle_Lebrun.pdf" target="blank" class="btn btn-secondary btn-lg button1">Télécharger CV</a>
-                <a href="#contact" class="btn btn-lg button2" data-bs-toggle="modal" data-bs-target="#contact" >Me contacter</a>
+              <a
+                href="docs/CV_Estelle_Lebrun.pdf"
+                target="blank"
+                class="btn btn-secondary btn-lg button1"
+                >Télécharger CV</a
+              >
+              <a
+                href="#contact"
+                class="btn btn-lg button2"
+                data-bs-toggle="modal"
+                data-bs-target="#contact"
+                >Me contacter</a
+              >
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- SKILLS SECTION -->
+    <!-- SKILLS SECTION -->
 
-<section id="skills" >
-
-    <div class="heading">
+    <section id="skills">
+      <div class="heading">
         <h2>Compétences</h2>
-    </div>
-    <div class="container-fluid">
+      </div>
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
-                <h5>Compétences Techniques</h5>
-                <div class="graydivider"></div>
-                    <div class="col1">
-                        <div class="techskills">
-                        <p>HTML 5 <br>
-                            CSS 3 <br>
-                            Bootstrap <br>
-                            Sass <br> 
-                            JavaScript <br>
-                            Jquery <br>
-                            Angular</p>
-                        </div>
-                        <div class="starsrate">
-                        <p><i class="fab fa-html5"></i><br>
-                         <i class="fab fa-css3-alt"></i><br>
-                         <i class="fab fa-bootstrap"></i><br>
-                         <i class="fab fa-sass"></i><br>
-                         <i class="fab fa-js"></i><br>
-                         <img src="images/Jquery.png" alt="Logo_Jquery"><br>
-                         <i class="fab fa-angular"></i><br>
-                        </p>
-                         </div>
+          <div class="col-md-6">
+            <h5>Compétences Techniques</h5>
+            <div class="graydivider"></div>
+            <div class="col1">
+              <div class="techskills">
+                <p>
+                  HTML 5 <br />
+                  CSS 3 <br />
+                  Bootstrap <br />
+                  Sass <br />
+                  JavaScript <br />
+                  Jquery <br />
+                  Angular
+                </p>
+              </div>
+              <div class="starsrate">
+                <p>
+                  <i class="fab fa-html5"></i><br />
+                  <i class="fab fa-css3-alt"></i><br />
+                  <i class="fab fa-bootstrap"></i><br />
+                  <i class="fab fa-sass"></i><br />
+                  <i class="fab fa-js"></i><br />
+                  <img src="images/Jquery.png" alt="Logo_Jquery" /><br />
+                  <i class="fab fa-angular"></i><br />
+                </p>
+              </div>
 
-                        <div class="techskills">
-                        <p> PHP <br>
-                            MySQL <br>
-                            Laravel<br>
-                            Symfony<br>
-                            Java
-                        </p>
-                        </div>
-                        <div class="starsrate">
-                         <p> <i class="fab fa-php"></i><br>
-                            <img src="images/mysql.png" alt="Logo_MySql"><br>
-                            <i class="fab fa-laravel"></i><br>
-                            <i class="fab fa-symfony"></i><br>
-                            <i class="fab fa-java"></i>
-                         </p>
-                        </div>
-                    </div>
+              <div class="techskills">
+                <p>
+                  PHP <br />
+                  MySQL <br />
+                  Laravel<br />
+                  Symfony<br />
+                  Java
+                </p>
+              </div>
+              <div class="starsrate">
+                <p>
+                  <i class="fab fa-php"></i><br />
+                  <img src="images/mysql.png" alt="Logo_MySql" /><br />
+                  <i class="fab fa-laravel"></i><br />
+                  <i class="fab fa-symfony"></i><br />
+                  <i class="fab fa-java"></i>
+                </p>
+              </div>
             </div>
-                
-                <div class="col-md-6">
-                   <h5>Savoir-être</h5>
-                   <div class="graydivider"></div>
-                   <div class="col2">
-                       <div>
-                        <ul>
-                            <li>Esprit d'équipe</li>
-                            <li>Grande curiosité d'esprit</li>
-                            <li>Capacité d'apprentissage</li>
-                            <li>Maturité, engagement</li>
-                            <li>Autodidacte</li>
-                            <li>Adaptabilité au changement</li>
-                        </ul>
-                        </div>
-                        <div>
-                        <ul>
-                            <li>Résolution de problèmes</li>
-                            <li>Reporting et analyse de données</li>
-                            <li>Support & conseil clients internes et externes</li>
-                            <li>Méthode agile</li>
-                            <li>Orientée Clients et résultats</li>
-                            <li>Rigoureuse, méthodique et organisée</li>
-                        </ul>
-                        </div>
-                    </div>        
-                </div>
+          </div>
+
+          <div class="col-md-6">
+            <h5>Savoir-être</h5>
+            <div class="graydivider"></div>
+            <div class="col2">
+              <div>
+                <ul>
+                  <li>Esprit d'équipe</li>
+                  <li>Grande curiosité d'esprit</li>
+                  <li>Capacité d'apprentissage</li>
+                  <li>Maturité, engagement</li>
+                  <li>Autodidacte</li>
+                  <li>Adaptabilité au changement</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>Résolution de problèmes</li>
+                  <li>Reporting et analyse de données</li>
+                  <li>Support & conseil clients internes et externes</li>
+                  <li>Méthode agile</li>
+                  <li>Orientée Clients et résultats</li>
+                  <li>Rigoureuse, méthodique et organisée</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- EXPERIENCE SECTION -->
+    <!-- EXPERIENCE SECTION -->
 
-<section id="experience">
-
-    <div class="container-fluid">
-
+    <section id="experience">
+      <div class="container-fluid">
         <h2 class="heading">Expérience professionnelle</h2>
 
         <div class="card-group">
-
-        <div class="card" id="card-one">
-            <div class="card-header"><h5 >Développeuse Web Fullstack</h5>
-            </div>
-                <div class="card-body">
-                <img class="float" src="images/LogoCampus.jpg" alt="Logo Campus">
-                <div class="card-text">
-                <strong>Campus Numérique In The Alps</strong> <br> 
-                Décembre 2021 - Juin 2023<br> <br>
-                <p> <em> Formation sur 18 mois dont 12 en alternance </em> 
-                <br> <br> 
-                Le programme aborde les compétences attendues sur les technologies majeures : HTML, CSS, 
-                JavaScript, Java, Node JS, Angular, Symfony, graphisme, bases de données et administration 
-                des réseaux, algorithmique… et les soft skills indispensables en entreprise (méthode agile, 
-                communication...).
-                </p>
-            </div>
-                <a href="docs/Campus_Numerique_Programme-Formation-Technicien-Developpeur-805h.pdf" target="_blank">Télécharger Programme</a>
-                </div>
-        </div>
-
-        <div class="card" id="card-two">
-            <div class="card-header"><h5 >Généraliste & Analyste data RH</h5>
-            </div>
-                <div class="card-body">
-                <img class="float" src="images/LogoRoche.png" alt="Logo Roche">
-                <div class="card-text">
-                <strong>Roche Diagnostics France</strong> <br> 
-                Juillet 2011 - Mai 2021 (10 ans)
-                <br><br> 
-                    <ul>
-                        <li> Reporting & analyse de données</li>
-                        <li> Conseil / support clients internes et externes</li>
-                        <li>Projets transverses : actions de communication interne, création du site intranet RH</li>
-                        <li> Référente RGPD</li>
-                     </ul>
-                    </div>
-                </div>
-        </div>
-
-        <div class="card" id="card-three">
-            <div class="card-header"><h5 >Généraliste RH</h5>
-            </div>
-                <div class="card-body">
-                <img class="float" src="images/LogoDSM.svg" alt="Logo DSM">
-                <div class="card-text">
-                <strong>DSM Food Specialties</strong> <br> 
-                Février 2007 - Mai 2011 (4 ans)
-                <br><br> 
-                    <ul>
-                        <li> Implémentation et intégration nouveau SIRH (ADP - Hypervision)</li>
-                    </ul>
-                </div>
-                </div>
-        </div>
-
-        <div class="card" id="card-four">
-            <div class="card-header"><h5 >Généraliste RH</h5>
-            </div>
-                <div class="card-body">
-                <div class="card-text">
+          <div class="card" id="card-one">
+            <div class="card-header"><h5>Développeuse Web Fullstack</h5></div>
+            <div class="card-body">
+              <img
+                class="float"
+                src="images/LogoCampus.jpg"
+                alt="Logo Campus"
+              />
+              <div class="card-text">
+                <strong>Campus Numérique In The Alps</strong> <br />
+                Décembre 2021 - Juin 2023<br />
+                <br />
                 <p>
-                <img  src="images/LogoCarrefour.jpg" alt="Logo Carrefour">
-                <strong>Carrefour Market</strong> </p>
-                <p><img  src="images/Logo_Mutuelles_de_France.jpg" alt="Logo Mutuelles">
-                <strong>Mutuelles de France Réseau </strong></p>
-                <p><img  src="images/logoPE.jpg" alt="Logo Pole Emploi">
-                <strong>Assedic des Alpes</strong></p>
-                <p style="text-align: center;"> Juillet 2002 - Août 2006 (4 ans)</p>
-                </div>
-                </div>
+                  <em> Formation sur 18 mois dont 12 en alternance </em> <br />
+                  <br />
+                  Le programme aborde les compétences attendues sur les
+                  technologies majeures : HTML, CSS, JavaScript, Java, Node JS,
+                  Angular, Symfony, graphisme, bases de données et
+                  administration des réseaux, algorithmique… et les soft skills
+                  indispensables en entreprise (méthode agile,
+                  communication...).
+                </p>
+              </div>
+              <a
+                href="docs/Campus_Numerique_Programme-Formation-Technicien-Developpeur-805h.pdf"
+                target="_blank"
+                >Télécharger Programme</a
+              >
+            </div>
+          </div>
+
+          <div class="card" id="card-two">
+            <div class="card-header">
+              <h5>Généraliste & Analyste data RH</h5>
+            </div>
+            <div class="card-body">
+              <img class="float" src="images/LogoRoche.png" alt="Logo Roche" />
+              <div class="card-text">
+                <strong>Roche Diagnostics France</strong> <br />
+                Juillet 2011 - Mai 2021 (10 ans)
+                <br /><br />
+                <ul>
+                  <li>Reporting & analyse de données</li>
+                  <li>Conseil / support clients internes et externes</li>
+                  <li>
+                    Projets transverses : actions de communication interne,
+                    création du site intranet RH
+                  </li>
+                  <li>Référente RGPD</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-three">
+            <div class="card-header"><h5>Généraliste RH</h5></div>
+            <div class="card-body">
+              <img class="float" src="images/LogoDSM.svg" alt="Logo DSM" />
+              <div class="card-text">
+                <strong>DSM Food Specialties</strong> <br />
+                Février 2007 - Mai 2011 (4 ans)
+                <br /><br />
+                <ul>
+                  <li>
+                    Implémentation et intégration nouveau SIRH (ADP -
+                    Hypervision)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-four">
+            <div class="card-header"><h5>Généraliste RH</h5></div>
+            <div class="card-body">
+              <div class="card-text">
+                <p>
+                  <img src="images/LogoCarrefour.jpg" alt="Logo Carrefour" />
+                  <strong>Carrefour Market</strong>
+                </p>
+                <p>
+                  <img
+                    src="images/Logo_Mutuelles_de_France.jpg"
+                    alt="Logo Mutuelles"
+                  />
+                  <strong>Mutuelles de France Réseau </strong>
+                </p>
+                <p>
+                  <img src="images/logoPE.jpg" alt="Logo Pole Emploi" />
+                  <strong>Assedic des Alpes</strong>
+                </p>
+                <p style="text-align: center">
+                  Juillet 2002 - Août 2006 (4 ans)
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</section>
+      </div>
+    </section>
 
-<!-- PORTFOLIO SECTION -->    
+    <!-- PORTFOLIO SECTION -->
 
-<section id="portfolio">
-
-    <div class="container">
-        
+    <section id="portfolio">
+      <div class="container">
         <h2 class="heading">Portfolio</h2>
-        
+
         <div class="row">
-
-            <div class="col-md-6">
-                <figure>
-                <a class="img-thumbnail" href="projet_vandeins.html" target="blank">
-                <img src="images/ProjetVandeins.png" alt="Projet1">
-                </a>
-                <figcaption>Site en cours de réalisation pour une commune de l'Ain.
-                 HTML, CSS, Bootstrap, Javascript pour la partie front-end et PHP, Mysql pour la partie back-end (espace administrateur, contrôle données et envoi formulaire) <br> Cliquez sur l'image pour plus d'informations.</figcaption>
+          <div class="col-md-6">
+            <figure>
+              <a
+                class="img-thumbnail"
+                href="projet_vandeins.html"
+                target="blank"
+              >
+                <img src="images/ProjetVandeins.png" alt="Projet1" />
+              </a>
+              <figcaption>
+                Site en cours de réalisation pour une commune de l'Ain. HTML,
+                CSS, Bootstrap, Javascript pour la partie front-end et PHP,
+                Mysql pour la partie back-end (espace administrateur, contrôle
+                données et envoi formulaire) <br />
+                Cliquez sur l'image pour plus d'informations.
+              </figcaption>
             </figure>
-            </div>
+          </div>
 
-            <div class="col-md-6">
-                <figure>
-                <a class="img-thumbnail" href="#" target="blank">
-                <img src="images/ProjetCV.png" alt="Projet2">
-                </a>
-                <figcaption>Ce site a été codé en HTML, CSS, Bootstrap, Javascript pour la partie front-end et PHP pour la partie back-end (contrôle données et envoi formulaire)</figcaption>
+          <div class="col-md-6">
+            <figure>
+              <a class="img-thumbnail" href="#" target="blank">
+                <img src="images/ProjetCV.png" alt="Projet2" />
+              </a>
+              <figcaption>
+                Ce site a été codé en HTML, CSS, Bootstrap, Javascript pour la
+                partie front-end et PHP pour la partie back-end (contrôle
+                données et envoi formulaire)
+              </figcaption>
             </figure>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <div class="chevron">
+      <a href="#header"><i class="bi bi-chevron-up"></i></a>
     </div>
-</section>
 
-<div class="chevron"><a href="#header"><i class="bi bi-chevron-up"></i></a></div>
-    
-<!-- FOOTER --> 
+    <!-- FOOTER -->
 
-<footer>
-    <div class="row">
+    <footer>
+      <div class="row">
         <div class="col-md-4 mb-3">
-            <img id="footer-logo" src="images/EL_logo.jpg" alt="Logo_Estelle_Lebrun">
+          <img
+            id="footer-logo"
+            src="images/EL_logo.jpg"
+            alt="Logo_Estelle_Lebrun"
+          />
         </div>
 
         <div class="col-md-4 mb-3">
-            <p>Copyright@ 2022 - Tous droits réservés<br>
+          <p>
+            Copyright@ 2022 - Tous droits réservés<br />
             Design, conception et réalisation : Estelle Lebrun
-            </p>
+          </p>
         </div>
 
         <div id="footer-icones" class="col-md-4">
-            <a href="mailto:lebrun.estelle@gmail.com" ><i class="bi bi-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/estelle-lebrun-299a9113b/" target="blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/stoule-dev" target="blank"> <i class="bi bi-github"></i></a>
+          <a href="mailto:lebrun.estelle@gmail.com"
+            ><i class="bi bi-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/estelle-lebrun-299a9113b/"
+            target="blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://github.com/stoule-dev" target="blank">
+            <i class="bi bi-github"></i
+          ></a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/afa68139eb.js" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://kit.fontawesome.com/afa68139eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
